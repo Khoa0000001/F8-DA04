@@ -1,0 +1,56 @@
+.course_item {
+    border-radius: 10px;
+    display: flex;
+    margin: 0 8px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+    .course_thumb {
+        background-color: #ebebeb;
+        border-radius: 8px;
+        display: block;
+        line-height: 67px;
+        min-height: 67px;
+        text-align: center;
+        width: 120px;
+        &:after {
+            color: var(--text-color);
+            content: 'NO IMAGE';
+            font-size: 1.2rem;
+        }
+    }
+    .course_info {
+        flex: 1 1;
+        margin-left: 12px;
+    }
+    .title {
+        font-size: 1.4rem;
+        margin: 6px 0 0;
+        a {
+            color: var(--text-color);
+        }
+    }
+    .last_completed {
+        color: #666;
+        font-size: 1.2rem;
+        margin: 4px 0 0;
+    }
+    .VerticalProgressBar {
+        background-color: #ddd;
+        border-radius: 4px;
+        height: 8px;
+        margin-top: 8px;
+        overflow: hidden;
+        position: relative;
+        &:after {
+            background-color: var(--primary-color);
+            bottom: 0;
+            content: '';
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: width 1s ease;
+            width: var(--progress);
+        }
+    }
+}

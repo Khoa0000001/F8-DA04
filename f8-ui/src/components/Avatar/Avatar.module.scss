@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    font-size: var(--font-size);
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 9em;
+    object-fit: cover;
+    width: 9em;
+}

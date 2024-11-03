@@ -1,0 +1,11 @@
+.wrapper {
+    :global(.w-md-editor) {
+        box-shadow: none; /* Xóa bóng đổ */
+    }
+
+    :global(.w-md-editor-toolbar) { /* Sửa tên lớp */
+        background-color: #eef4fc; /* Thiết lập màu nền */
+        border-radius: 10px 10px 0 0;
+    }
+}
+

@@ -1,0 +1,145 @@
+@import 'normalize.css';
+
+:root {
+    --primary-color: #f05123;
+    --black-color: #000;
+    --text-color: #333;
+    --white-color: #fff;
+    --white: #fff;
+    --desc-color: #0000008a;
+    --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
+    // Main layout
+    --main-layout-header-height: 66px;
+}
+
+* {
+    // margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    // font-size: 1.6rem;
+    --text-color: #333;
+    text-rendering: optimizespeed;
+    line-height: 1.5;
+    color: var(--text-color);
+    overflow-y: overlay;
+}
+
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+//Scrollbar
+html ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+input,
+button,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+button {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+input {
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 1.15;
+    margin: 0;
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: transparent;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 600;
+}
+
+//Fonts embedded
+@font-face {
+    font-family: F8Font;
+    src: url('/assets/fonts/slick.295183786cd8a1389865.woff');
+}
+
+// Tippy
+@keyframes Tippy-module_fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Tippy-module_wrapper {
+    animation: Tippy-module_fadeIn 0.3s ease;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.2);
+    color: #1d2129;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 0;
+    transition: all 0.3s ease-in-out;
+    will-change: opacity, transform;
+}
+
+[data-tippy-root] {
+    max-width: calc(100vw - 10px);
+}
+
+//Swiper
+.swiper-slide {
+    text-align: unset;
+}

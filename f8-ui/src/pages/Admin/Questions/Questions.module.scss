@@ -1,0 +1,30 @@
+.header {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+}
+.addQuestion {
+    // position: absolute;
+}
+.searchLesson {
+    margin-left: 20px;
+    width: 400px;
+}
+.searchCourse {
+    width: 300px;
+}
+
+.tableQuestion {
+    table {
+        box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.2);
+        // background-color: (22, 24, 35, 0.06);
+        margin-bottom: 6px;
+        border-radius: 0 8px 8px 8px;
+    }
+}

@@ -1,0 +1,90 @@
+.wapper {
+    max-width: 1920px;
+    width: 100%;
+}
+.slideshow {
+    margin-top: 18px;
+}
+.content {
+    margin-top: 50px;
+    overflow: hidden;
+    padding: 0 44px 74px;
+    .ScrollList {
+        margin-bottom: 8px;
+    }
+    .heading-wrap {
+        align-items: baseline;
+        display: flex;
+    }
+    .heading {
+        color: #242424;
+        font-size: 2.4rem;
+        font-weight: 900;
+        margin-right: auto;
+        margin-top: 16px;
+    }
+    .label {
+        background-color: #1473e6;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 3px 6px;
+        position: relative;
+        right: -8px;
+        text-transform: uppercase;
+        top: -6px;
+    }
+    .body {
+        min-height: 200px;
+        padding-bottom: 0;
+        .old-price {
+            font-size: 1.4rem;
+            margin-right: 8px;
+            text-decoration: line-through;
+        }
+        .main-price {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .students-count {
+            color: #666;
+            font-size: 1.4rem;
+            span {
+                margin-left: 8px;
+            }
+        }
+        .author {
+            align-items: center;
+            display: flex;
+            a {
+                color: #757575;
+                font-size: 1.4rem;
+            }
+            .avatar-wrapper {
+                margin-right: 8px;
+                transform: scale(0.8);
+            }
+            .user-name {
+                color: #292929;
+                font-weight: 600;
+            }
+            .dot {
+                margin: 0 8px;
+            }
+        }
+        .stats {
+            color: #757575;
+            display: flex;
+            font-size: 1.4rem;
+            margin-left: -24px;
+            div {
+                margin-left: 24px;
+            }
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+}

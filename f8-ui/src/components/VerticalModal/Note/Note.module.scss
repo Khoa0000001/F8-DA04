@@ -1,0 +1,114 @@
+.wrapper {
+    --time-width: 58px;
+}
+.list {
+    list-style: none;
+    padding-left: 0;
+    .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 24px;
+        .bigHeading {
+            font-size: 2.4rem;
+        }
+    }
+}
+.selectable {
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    outline: none;
+    padding: 4px 12px;
+}
+.selectable + .selectable {
+    margin-left: 16px;
+}
+.item {
+    margin-top: 48px;
+    position: relative;
+    .itemHead {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .itemTime {
+        background-color: var(--primary-color);
+        border-radius: 24px;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 24px;
+        margin-right: 16px;
+        text-align: center;
+        transition: opacity 0.3s ease;
+        width: var(--time-width);
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    .titleWrap {
+        align-items: baseline;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.6;
+    }
+    .itemTitle {
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        color: var(--primary-color);
+        display: -webkit-box;
+        font-size: 1.6rem;
+        font-weight: 600;
+        overflow: hidden;
+        transition: opacity 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    .itemTrackTitle {
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        color: #333;
+        display: -webkit-box;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-left: 8px;
+        overflow: hidden;
+        transition: opacity 0.3s ease;
+    }
+    .itemCtrl {
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+    }
+    .itemCtrlBtn {
+        background-color: transparent;
+        color: #bfbfbf;
+        font-size: 1.4rem;
+        padding: 8px 12px;
+        &:hover {
+            color: #666;
+            cursor: pointer;
+        }
+    }
+    .itemContent {
+        word-wrap: break-word;
+        background-color: #f7f8fa;
+        border-radius: 6px;
+        color: #333;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        margin-top: 12px;
+        padding: 16px;
+        p {
+            line-height: 1.6;
+            margin: 0;
+            min-height: 2.4rem;
+        }
+    }
+}

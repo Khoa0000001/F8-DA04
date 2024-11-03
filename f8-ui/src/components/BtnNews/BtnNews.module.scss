@@ -1,0 +1,35 @@
+.wapper {
+    bottom: 60px;
+    left: 22px;
+    position: fixed;
+}
+.btn {
+    align-items: center;
+    background-color: hsla(0, 0%, 94%, 0.8);
+    border-radius: 50%;
+    color: #404040;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 44px;
+    justify-content: center;
+    margin-top: 4px;
+    width: 44px;
+    .icon {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    svg {
+        width: 24px;
+        height: 24px;
+        font-size: 2.4rem;
+    }
+}

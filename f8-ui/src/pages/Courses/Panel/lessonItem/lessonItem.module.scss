@@ -1,0 +1,35 @@
+.lessonItem {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 48px;
+    overflow: hidden;
+    padding: 0px 30px 0px 48px;
+    position: relative;
+    .floatLeft {
+        float: left;
+    }
+    .iconLink {
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .icon {
+        left: 32px;
+        position: absolute;
+        top: 17px;
+    }
+    .video {
+        color: rgba(240, 81, 35, 0.4);
+        margin-right: 4px;
+    }
+    .lessonName {
+        padding-left: 6px;
+    }
+    .floatRight {
+        float: right;
+    }
+    span:nth-child(2) {
+        margin-left: 58px;
+        min-width: 69px;
+        text-align: right;
+    }
+}

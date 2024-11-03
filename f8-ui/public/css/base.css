@@ -1,0 +1,157 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    row-gap: 22px;
+}
+/* PC */
+@media (min-width: 1024px) {
+    .col-1 {
+        grid-column: span calc(1);
+    }
+
+    .col-2 {
+        grid-column: span calc(2);
+    }
+
+    .col-3 {
+        grid-column: span calc(3);
+    }
+
+    .col-4 {
+        grid-column: span calc(4);
+    }
+
+    .col-5 {
+        grid-column: span calc(5);
+    }
+
+    .col-6 {
+        grid-column: span calc(6);
+    }
+
+    .col-7 {
+        grid-column: span calc(7);
+    }
+
+    .col-8 {
+        grid-column: span calc(8);
+    }
+
+    .col-9 {
+        grid-column: span calc(9);
+    }
+
+    .col-10 {
+        grid-column: span calc(10);
+    }
+
+    .col-11 {
+        grid-column: span calc(11);
+    }
+
+    .col-12 {
+        grid-column: span calc(12);
+    }
+}
+
+/* Table */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .col_TB-1 {
+        grid-column: span calc(1);
+    }
+
+    .col_TB-2 {
+        grid-column: span calc(2);
+    }
+
+    .col_TB-3 {
+        grid-column: span calc(3);
+    }
+
+    .col_TB-4 {
+        grid-column: span calc(4);
+    }
+
+    .col_TB-5 {
+        grid-column: span calc(5);
+    }
+
+    .col_TB-6 {
+        grid-column: span calc(6);
+    }
+
+    .col_TB-7 {
+        grid-column: span calc(7);
+    }
+
+    .col_TB-8 {
+        grid-column: span calc(8);
+    }
+
+    .col_TB-9 {
+        grid-column: span calc(9);
+    }
+
+    .col_TB-10 {
+        grid-column: span calc(10);
+    }
+
+    .col_TB-11 {
+        grid-column: span calc(11);
+    }
+
+    .col_TB-12 {
+        grid-column: span calc(12);
+    }
+}
+
+@media (max-width: 739px) {
+    .col_MB-1 {
+        grid-column: span calc(1);
+    }
+
+    .col_MB-2 {
+        grid-column: span calc(2);
+    }
+
+    .col_MB-3 {
+        grid-column: span calc(3);
+    }
+
+    .col_MB-4 {
+        grid-column: span calc(4);
+    }
+
+    .col_MB-5 {
+        grid-column: span calc(5);
+    }
+
+    .col_MB-6 {
+        grid-column: span calc(6);
+    }
+
+    .col_MB-7 {
+        grid-column: span calc(7);
+    }
+
+    .col_MB-8 {
+        grid-column: span calc(8);
+    }
+
+    .col_MB-9 {
+        grid-column: span calc(9);
+    }
+
+    .col_MB-10 {
+        grid-column: span calc(10);
+    }
+
+    .col_MB-11 {
+        grid-column: span calc(11);
+    }
+
+    .col_MB-12 {
+        grid-column: span calc(12);
+    }
+}

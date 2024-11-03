@@ -1,0 +1,32 @@
+// Logo
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    height: 32px;
+    margin: 16px;
+    background: 'rgba(255, 255, 255, 0.2)';
+}
+
+.logo-link {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    border-radius: 8px;
+}
+
+.logoHeading {
+    margin-left: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.logoHeading.collapsed {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}

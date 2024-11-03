@@ -1,0 +1,8 @@
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng tối đa */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}

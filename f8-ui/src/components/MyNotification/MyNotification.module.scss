@@ -1,0 +1,38 @@
+.notification_item{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 36px 8px 12px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    transition: background-color .3s;
+    margin: 0 8px;
+    border-radius: 10px;
+}
+
+.avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+}
+.massage{
+    font-size: 1.4rem;
+    padding: 0 10px 0 6px;
+    line-height: 18px;
+    color: var(--text-color);
+    flex: 1;
+    word-break: break-word;
+    strong{
+        font-weight: 600;
+    }
+}
+
+.createTime{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 6px;
+    color: var(--primary-color);
+}

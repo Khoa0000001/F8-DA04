@@ -1,0 +1,197 @@
+.detailComment {
+    display: flex;
+    margin-top: 16px;
+    position: relative;
+    .avatarWrap {
+        flex-shrink: 0;
+        .avatarWrapper {
+            min-height: 45px;
+            min-width: 45px;
+            position: relative;
+        }
+    }
+    .commentBody {
+        flex: 1 1;
+        margin-left: 8px;
+        max-width: 592px;
+        padding-left: 4px;
+        &:hover .moreBtnWrapper {
+            opacity: 1;
+        }
+        .commentInner {
+            position: relative;
+        }
+        .commentWrapper {
+            display: inline-block;
+            max-width: 100%;
+        }
+        .commentContent {
+            background-color: #f2f3f5;
+            border-radius: 18px;
+            color: #1c1e21;
+            padding: 9px 12px;
+            position: relative;
+            max-width: 500px;
+            min-width: 400px;
+        }
+        .commentContentHeading {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .commentText {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 5px !important;
+            overflow-x: auto;
+            word-break: break-word;
+            .contentText {
+                word-wrap: break-word;
+                color: #292929;
+                font-size: 1.4rem;
+                line-height: 2;
+                p {
+                    margin: 6px 0;
+                }
+            }
+        }
+    }
+}
+.commentTime {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    min-height: 27px;
+    .createdAt {
+        align-items: center;
+        display: flex;
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .createdAtLeft,
+    .createdAtRight {
+        align-items: center;
+        display: flex;
+    }
+    .iconWrapper {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+    .likeComment,
+    .replyComment {
+        color: #e87a5a;
+        font-size: 1.3rem;
+        margin: 0 4px;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    .time {
+        color: #999;
+        font-size: 1.3rem;
+        margin: 0 4px;
+    }
+    .moreBtnWrapper {
+        opacity: 0;
+        align-items: center;
+        display: flex;
+        height: 18px;
+        transition: all 0.3s ease-in-out;
+    }
+    .moreBtn {
+        background-color: transparent;
+        border: none;
+        color: #888;
+        display: inline-block;
+        font-size: 1.6rem;
+        margin: 0;
+        outline: none;
+        padding: 4px;
+        position: relative;
+        top: 2px;
+        &:hover {
+            color: var(--text-color);
+            cursor: pointer;
+        }
+    }
+}
+.commentAuthor {
+    color: var(--black-color);
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.commentContentRep {
+    flex: 1 1;
+    min-width: 400px;
+    max-width: 400px;
+    margin-left: 36px;
+    .actionWrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        width: 100%;
+        button {
+            background: transparent;
+            border-radius: 20px;
+            color: #888;
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 10px 16px;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .cancel {
+            &:hover {
+                background: #ebebeb;
+                color: #777;
+                cursor: pointer;
+                opacity: 0.8;
+            }
+            margin-right: 16px;
+        }
+        .ok {
+            background: #ccc;
+            color: var(--white-color);
+            pointer-events: none;
+        }
+        .active {
+            background: var(--primary-color);
+            color: var(--white-color);
+            pointer-events: auto;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.seeMore{
+    color: #ef4312;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    margin-left: 65px;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.detailRepCommnet{
+    margin-left: 30px;
+    border-left: 1px solid #dae4f0;
+    .replyMore{
+        margin-left: 12px;
+    }
+}

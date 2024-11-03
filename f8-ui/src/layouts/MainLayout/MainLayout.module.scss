@@ -1,0 +1,14 @@
+.wrapper {
+}
+
+.container {
+    display: flex;
+    margin-top: var(--main-layout-header-height);
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1 1;
+    max-width: calc(100% - 96px);
+    padding: 0 40px 0 20px;
+}

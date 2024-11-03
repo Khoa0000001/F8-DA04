@@ -1,0 +1,44 @@
+.notification {
+    display: flex;
+    align-items: center;
+    color: #707070;
+    font-size: 2rem;
+    padding: 8px;
+}
+.notification :hover{
+    cursor: pointer;
+    color: #4c4c4c;
+}
+
+// Tippy
+.wrapper {
+    max-width: 400px;
+    padding-bottom: 12px;
+    .header {
+        align-items: center;
+        display: flex;
+        padding: 14px 20px 16px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .seeMore {
+        border-radius: 4px;
+        color: var(--primary-color);
+        font-size: 1.4rem;
+        margin-left: auto;
+        padding: 8px;
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+
+    .content {
+        max-height: 68vh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+}

@@ -1,0 +1,28 @@
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng tối đa */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.searchCourse {
+    width: 400px;
+    margin-left: 65%;
+}
+.addPartCourse {
+    position: absolute;
+}
+:global(.ant-image-preview-img) {
+    width: 400px !important;
+    height: auto !important;
+}
+
+.tableLessons {
+    table {
+        box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.2);
+        // background-color: (22, 24, 35, 0.06);
+        margin-bottom: 6px;
+        border-radius: 0 8px 8px 8px;
+    }
+}

@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formbody {
+    width: 380px;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.top_title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    label {
+        cursor: default;
+    }
+}
+
+.inputSDT {
+    background: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.06);
+    border-radius: 44px;
+    display: flex;
+    height: 44px;
+    align-items: center;
+    margin-top: 10px;
+    input {
+        background-color: transparent;
+        border: none;
+        display: block;
+        flex: 1 1;
+        font-size: 1.4rem;
+        outline: none;
+        padding: 12px 20px;
+    }
+}
+.bottom {
+    margin-top: 10px;
+}
+
+.bottom_content {
+    background: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.06);
+    border-radius: 44px;
+    display: flex;
+    height: 44px;
+    input {
+        background-color: transparent;
+        border: none;
+        display: block;
+        flex: 1 1;
+        font-size: 1.4rem;
+        outline: none;
+        padding: 12px 20px;
+    }
+}
+
+.formbody-btn {
+    padding: 12px 22px;
+    background-color: #91ede4;
+    border-radius: 24px;
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    span {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+.link_signing {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signing {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    padding: 24px 16px 0;
+}
+
+.errorMsg {
+    font-size: 12px;
+    color: red;
+    margin: 6px;
+    margin-left: 16px;
+}

@@ -1,0 +1,16 @@
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng tối đa */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+:global(.ant-image-preview-img) {
+    width: 400px !important;
+    height: auto !important;
+}
+.wrapper {
+    // overflow-y: overlay;
+}
